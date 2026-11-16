@@ -1,5 +1,9 @@
 # HTTP & respons
 
+{% hint style="success" %}
+Baru belajar? Baca dulu [panduan langkah demi langkah](../panduan/panggil-api-lain.md). Halaman ini adalah **referensi teknis** untuk dicari ulang.
+{% endhint %}
+
 Fungsi untuk memanggil API eksternal (`request`, `get`, `post`, `put`, `patch`, `delete`) dan untuk menentukan respons endpoint gateway (`response`).
 
 ## Aturan umum fungsi HTTP

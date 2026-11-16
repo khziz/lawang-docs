@@ -1,5 +1,9 @@
 # Messaging & SAP
 
+{% hint style="success" %}
+Baru belajar? Baca dulu [panduan langkah demi langkah](../panduan/kirim-pesan-dan-sap.md). Halaman ini adalah **referensi teknis** untuk dicari ulang.
+{% endhint %}
+
 **Mode:** gateway dan scheduler, untuk semua fungsi di halaman ini.
 
 ## `$GT.publish`
@@ -61,7 +65,7 @@ $GT.rfc(source, functionName, parameters, output?, timeout?)
 {% hint style="warning" %}
 * Untuk timeout eksplisit **tanpa filter**, isi slot output dengan `{}`.
 * Integer di slot output **tidak aman**: parser tetap mencoba JSON-decode `output`, sehingga bisa gagal.
-* Error RFC dapat berupa object terstruktur (lihat [aturan runtime](../panduan/cara-membaca.md)).
+* Error RFC dapat berupa object terstruktur (lihat [aturan runtime](../konsep/error-dan-timeout.md)).
 {% endhint %}
 
 ```js

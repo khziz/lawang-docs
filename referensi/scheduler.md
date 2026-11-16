@@ -1,5 +1,9 @@
 # Scheduler & sinkronisasi
 
+{% hint style="success" %}
+Baru belajar? Baca dulu [panduan langkah demi langkah](../panduan/job-scheduler.md). Halaman ini adalah **referensi teknis** untuk dicari ulang.
+{% endhint %}
+
 **Mode:** scheduler saja. Fungsi di halaman ini tidak tersedia di gateway.
 
 ## `$GT.run`

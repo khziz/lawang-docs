@@ -1,5 +1,9 @@
 # Hash, enkripsi, & tanda tangan
 
+{% hint style="success" %}
+Baru belajar? Baca dulu [panduan langkah demi langkah](../panduan/keamanan-data.md). Halaman ini adalah **referensi teknis** untuk dicari ulang.
+{% endhint %}
+
 **Mode:** gateway dan scheduler, untuk semua fungsi di halaman ini.
 
 ## Pilih fungsi yang tepat

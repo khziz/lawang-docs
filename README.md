@@ -1,33 +1,35 @@
-# Lawang Core: Referensi JavaScript
+# Lawang Core: Panduan JavaScript
 
-Panduan fungsi JavaScript untuk **API gateway** dan **job scheduler** Lawang Core. Di sini Anda menemukan sintaks, parameter, nilai kembalian, dan contoh pemakaian setiap fungsi.
+Selamat datang. Dokumentasi ini mengajarkan cara menulis **skrip JavaScript** di Lawang Core, mulai dari nol sampai bisa membuat endpoint API dan job terjadwal.
+
+{% hint style="info" %}
+Semua nama (koneksi database, job, topic, secret, URL, tabel) dalam contoh hanya **ilustrasi**. Ganti dengan nama yang ada di konfigurasi Anda.
+{% endhint %}
+
+## Pilih jalur Anda
+
+| Anda ingin... | Mulai dari |
+|---|---|
+| Tahu Lawang itu apa | [Apa itu Lawang Core?](mulai/apa-itu-lawang.md) |
+| Langsung mencoba | [Skrip pertama Anda](mulai/skrip-pertama.md) |
+| Mengerjakan tugas tertentu (database, API, file, dll.) | Bagian **Panduan per tugas** di sidebar |
+| Mencari detail satu fungsi | [Ringkasan semua fungsi](referensi/ringkasan-fungsi.md) |
+| Mencari tahu kenapa skrip error | [Pemecahan masalah](bantuan/pemecahan-masalah.md) |
+
+## Urutan belajar yang disarankan
+
+1. **Mulai di sini:** kenali konsep dan jalankan skrip pertama.
+2. **Konsep dasar:** pahami aturan yang berlaku untuk semua skrip.
+3. **Panduan per tugas:** pilih tugas yang Anda butuhkan, ikuti langkahnya.
+4. **Referensi:** buka saat butuh detail lengkap sebuah fungsi.
+5. **Bantuan:** daftar jebakan umum dan cara mengatasi error.
+
+## Info teknis
 
 | | |
 |---|---|
-| Fungsi `$GT` | 42 |
-| Helper global | 3 (`atob`, `btoa`, `console.log`) |
-| Engine | [Sobek](https://github.com/grafana/sobek) `v0.0.0-20261021132036-87a47258b7dc` |
+| Jumlah fungsi `$GT` | 42 |
+| Helper global | `atob`, `btoa`, `console.log` |
+| Engine JavaScript | [Sobek](https://github.com/grafana/sobek) `v0.0.0-20261021132036-87a47258b7dc` |
 | Snapshot sumber | `2ecee79c` |
-| Tanggal dokumen | 23 Oktober 2026 |
-
-{% hint style="info" %}
-Semua nama backend, job, topic, secret, URL, tabel, dan kunci dalam contoh hanyalah **ilustrasi**. Sesuaikan dengan konfigurasi Anda. Contoh yang mengubah sistem luar (database, file, publish, sync) tidak dieksekusi saat dokumen ini disusun.
-{% endhint %}
-
-## Mulai dari mana?
-
-- **Baru pertama kali?** Baca [Cara membaca dokumen & aturan runtime](panduan/cara-membaca.md).
-- **Ingin tahu data request apa yang tersedia?** Lihat [Properti konteks `$GT`](panduan/properti-konteks.md).
-- **Mencari fungsi tertentu?** Buka [Ringkasan semua fungsi](ringkasan-fungsi.md).
-- **Ingin contoh siap pakai?** Lihat [Contoh alur lengkap](contoh/alur-lengkap.md).
-
-## Gateway vs Scheduler
-
-Lawang menjalankan skrip di dua mode yang terpisah:
-
-| Mode | Fungsinya | Fungsi khusus mode ini |
-|---|---|---|
-| **Gateway** | Menangani request HTTP masuk | `$GT.response` |
-| **Scheduler** | Menjalankan job terjadwal | `$GT.run`, `$GT.parallel`, `$GT.sync`, `$GT.rfc_sync` |
-
-Fungsi lainnya tersedia di kedua mode.
+| Tanggal dokumen sumber | 23 Oktober 2026 |

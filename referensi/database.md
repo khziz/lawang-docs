@@ -1,5 +1,9 @@
 # Database
 
+{% hint style="success" %}
+Baru belajar? Baca dulu [panduan langkah demi langkah](../panduan/bekerja-dengan-database.md). Halaman ini adalah **referensi teknis** untuk dicari ulang.
+{% endhint %}
+
 Enam fungsi untuk membaca dan menulis database: `query`, `exec`, `exists`, `save`, `update`, `upsert`.
 
 ## Aturan umum

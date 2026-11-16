@@ -1,5 +1,9 @@
 # File, CSV, & Excel
 
+{% hint style="success" %}
+Baru belajar? Baca dulu [panduan langkah demi langkah](../panduan/bekerja-dengan-file.md). Halaman ini adalah **referensi teknis** untuk dicari ulang.
+{% endhint %}
+
 Fungsi untuk membaca dan menulis file lewat **backend file** yang sudah dikonfigurasi.
 
 ## Aturan umum
