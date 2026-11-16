@@ -1,9 +1,10 @@
 $schema: https://api.gitbook.com/gitbook-docs.yaml
 site:
+  title: Moklaar.co.id Docs
   structure:
     - type: space
-      key: lawang-docs
-      title: Lawang Core
-      path: lawang-docs
+      key: documentation
+      title: Documentation
+      path: documentation
       content:
         directory: ./
