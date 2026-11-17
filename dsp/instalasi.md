@@ -1,8 +1,12 @@
-# Instalasi dan kebutuhan sistem
+---
+description: System requirements, prasyarat, dan setup awal DSP.
+---
 
-## Kebutuhan sistem
+# Instalasi & system requirements
 
-| Komponen | Minimum | Rekomendasi |
+## System requirements
+
+| Komponen | Minimum | Recommended |
 |---|---|---|
 | Sistem operasi | Ubuntu 18.04 / Windows 10 | Ubuntu 20.04 / Windows 11 |
 | RAM | 2 GB | 4 GB atau lebih |

@@ -1,76 +1,73 @@
 # Table of contents
 
-* [Pengantar Lawang](README.md)
+* [Lawang Documentation](README.md)
 * [Apa itu Lawang?](lawang/apa-itu-lawang.md)
 
-## AMP: API Gateway
+## AMP
 
-* [AMP: Pengantar](amp/README.md)
+* [Overview](amp/README.md)
 * [Apa itu API gateway?](amp/api-gateway.md)
-* [Arsitektur dan kebutuhan sistem](amp/arsitektur.md)
+* [Architecture & system requirements](amp/arsitektur.md)
 * [Konsep dasar](amp/konsep-dasar.md)
-* [Koneksi HTTP](amp/koneksi-http.md)
-* [Koneksi database](amp/koneksi-database.md)
-* [Koneksi JavaScript](amp/koneksi-javascript.md)
-* [Koneksi baru di AMP v3.0](amp/koneksi-baru-v3.md)
+* [Connection](amp/connection/README.md)
+  * [Connection HTTP](amp/connection/http.md)
+  * [Connection Database](amp/connection/database.md)
+  * [Connection JavaScript](amp/connection/javascript/README.md)
+    * [Method JavaScript](amp/connection/javascript/methods/README.md)
+      * [Mengenal script JavaScript](amp/connection/javascript/methods/mulai/mengenal-script.md)
+      * [Script pertama Anda](amp/connection/javascript/methods/mulai/script-pertama.md)
+      * [Istilah penting](amp/connection/javascript/methods/mulai/istilah.md)
+      * [Aturan dasar script](amp/connection/javascript/methods/konsep/aturan-dasar.md)
+      * [Data yang tersedia di script](amp/connection/javascript/methods/konsep/data-request.md)
+      * [Error dan timeout](amp/connection/javascript/methods/konsep/error-dan-timeout.md)
+    * [Panduan per tugas](amp/connection/javascript/methods/panduan/buat-endpoint-api.md)
+      * [Membuat endpoint API](amp/connection/javascript/methods/panduan/buat-endpoint-api.md)
+      * [Memanggil API lain](amp/connection/javascript/methods/panduan/panggil-api-lain.md)
+      * [Bekerja dengan database](amp/connection/javascript/methods/panduan/bekerja-dengan-database.md)
+      * [Bekerja dengan file, CSV, dan Excel](amp/connection/javascript/methods/panduan/bekerja-dengan-file.md)
+      * [Mengamankan data](amp/connection/javascript/methods/panduan/keamanan-data.md)
+      * [Mengubah dan menyamarkan data](amp/connection/javascript/methods/panduan/ubah-dan-samarkan-data.md)
+      * [Mengirim pesan dan memanggil SAP](amp/connection/javascript/methods/panduan/kirim-pesan-dan-sap.md)
+      * [Mengatur job di scheduler](amp/connection/javascript/methods/panduan/job-scheduler.md)
+    * [Referensi method](amp/connection/javascript/methods/referensi/ringkasan-method.md)
+      * [Ringkasan semua method](amp/connection/javascript/methods/referensi/ringkasan-method.md)
+      * [Global tambahan](amp/connection/javascript/methods/referensi/global-tambahan.md)
+      * [Utilitas & logging](amp/connection/javascript/methods/referensi/utilitas-logging.md)
+      * [HTTP & response](amp/connection/javascript/methods/referensi/http.md)
+      * [Database](amp/connection/javascript/methods/referensi/database.md)
+      * [File, CSV, & Excel](amp/connection/javascript/methods/referensi/file.md)
+      * [Hash, enkripsi, & tanda tangan](amp/connection/javascript/methods/referensi/keamanan.md)
+      * [Masking & transformasi](amp/connection/javascript/methods/referensi/masking-transformasi.md)
+      * [Messaging & SAP](amp/connection/javascript/methods/referensi/messaging-sap.md)
+      * [Scheduler & sinkronisasi](amp/connection/javascript/methods/referensi/scheduler.md)
+      * [Fungsi bawaan ECMAScript](amp/connection/javascript/methods/referensi/bawaan-ecmascript.md)
+      * [Constructor bawaan](amp/connection/javascript/methods/referensi/constructor-bawaan.md)
+    * [Bantuan](amp/connection/javascript/methods/bantuan/jebakan-umum.md)
+      * [Jebakan umum](amp/connection/javascript/methods/bantuan/jebakan-umum.md)
+      * [Troubleshooting](amp/connection/javascript/methods/bantuan/pemecahan-masalah.md)
+      * [Validasi & batas dokumentasi](amp/connection/javascript/methods/bantuan/validasi-batas.md)
+  * [Fitur baru v3.0](amp/connection/fitur-baru-v3.md)
 * [Filter](amp/filter.md)
 * [Consumer](amp/consumer.md)
-* [Pengaturan](amp/pengaturan.md)
+* [Settings](amp/settings.md)
+* [Study Case AMP](amp/study-case/README.md)
+  * [1. Meneruskan request ke API partner](amp/study-case/01-proxy-http.md)
+  * [2. Query database sebagai API](amp/study-case/02-database-sebagai-api.md)
+  * [3. CRUD items dengan JavaScript](amp/study-case/03-crud-items-javascript.md)
+  * [4. Menggabungkan API dan menyamarkan data](amp/study-case/04-aggregator-dan-masking.md)
+  * [5. Akses per departemen](amp/study-case/05-akses-per-departemen.md)
 
-## AMP: Panduan fungsi JavaScript
+## DSP
 
-* [Pengantar](amp/javascript/README.md)
-
-### Mulai di sini
-
-* [Mengenal skrip JavaScript](amp/javascript/mulai/mengenal-skrip.md)
-* [Skrip pertama Anda](amp/javascript/mulai/skrip-pertama.md)
-* [Istilah penting](amp/javascript/mulai/istilah.md)
-
-### Konsep dasar
-
-* [Aturan dasar skrip](amp/javascript/konsep/aturan-dasar.md)
-* [Data yang tersedia di skrip](amp/javascript/konsep/data-request.md)
-* [Error dan timeout](amp/javascript/konsep/error-dan-timeout.md)
-
-### Panduan per tugas
-
-* [Membuat endpoint API](amp/javascript/panduan/buat-endpoint-api.md)
-* [Memanggil API lain](amp/javascript/panduan/panggil-api-lain.md)
-* [Bekerja dengan database](amp/javascript/panduan/bekerja-dengan-database.md)
-* [Bekerja dengan file, CSV, dan Excel](amp/javascript/panduan/bekerja-dengan-file.md)
-* [Mengamankan data](amp/javascript/panduan/keamanan-data.md)
-* [Mengubah dan menyamarkan data](amp/javascript/panduan/ubah-dan-samarkan-data.md)
-* [Mengirim pesan dan memanggil SAP](amp/javascript/panduan/kirim-pesan-dan-sap.md)
-* [Mengatur job di scheduler](amp/javascript/panduan/job-scheduler.md)
-
-### Referensi fungsi
-
-* [Ringkasan semua fungsi](amp/javascript/referensi/ringkasan-fungsi.md)
-* [Global tambahan](amp/javascript/referensi/global-tambahan.md)
-* [Utilitas & logging](amp/javascript/referensi/utilitas-logging.md)
-* [HTTP & respons](amp/javascript/referensi/http.md)
-* [Database](amp/javascript/referensi/database.md)
-* [File, CSV, & Excel](amp/javascript/referensi/file.md)
-* [Hash, enkripsi, & tanda tangan](amp/javascript/referensi/keamanan.md)
-* [Masking & transformasi](amp/javascript/referensi/masking-transformasi.md)
-* [Messaging & SAP](amp/javascript/referensi/messaging-sap.md)
-* [Scheduler & sinkronisasi](amp/javascript/referensi/scheduler.md)
-* [Fungsi bawaan ECMAScript](amp/javascript/referensi/bawaan-ecmascript.md)
-* [Constructor bawaan](amp/javascript/referensi/constructor-bawaan.md)
-
-### Contoh dan bantuan
-
-* [Contoh alur lengkap](amp/javascript/contoh/alur-lengkap.md)
-* [Jebakan umum](amp/javascript/bantuan/jebakan-umum.md)
-* [Pemecahan masalah](amp/javascript/bantuan/pemecahan-masalah.md)
-* [Validasi & batas dokumentasi](amp/javascript/bantuan/validasi-batas.md)
-
-## DSP: Data Synchronization
-
-* [DSP: Pengantar](dsp/README.md)
+* [Overview](dsp/README.md)
 * [Scheduler job](dsp/scheduler-job.md)
-* [Fitur sinkronisasi data](dsp/sinkronisasi.md)
-* [Instalasi dan kebutuhan sistem](dsp/instalasi.md)
-* [Membuat server, jadwal, dan job](dsp/membuat-job.md)
-* [Menulis script job](dsp/script-job.md)
+* [Sinkronisasi data](dsp/sinkronisasi.md)
+* [Instalasi & system requirements](dsp/instalasi.md)
+* [Membuat server, schedule, dan job](dsp/membuat-job.md)
+* [Script job](dsp/script-job.md)
+* [Study Case DSP](dsp/study-case/README.md)
+  * [1. Sinkronisasi database setiap malam](dsp/study-case/01-direct-sync.md)
+  * [2. Upsync: cabang ke pusat](dsp/study-case/02-upsync.md)
+  * [3. Downsync: master data ke cabang](dsp/study-case/03-downsync.md)
+  * [4. Orkestrasi beberapa job](dsp/study-case/04-orkestrasi-job.md)
+  * [5. Sinkronisasi tabel SAP](dsp/study-case/05-sync-sap.md)

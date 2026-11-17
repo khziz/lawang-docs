@@ -1,3 +1,7 @@
+---
+description: Pengertian API gateway dan fungsi-fungsinya.
+---
+
 # Apa itu API gateway?
 
 **API gateway** adalah lapisan perangkat lunak yang menyediakan **titik masuk tunggal** bagi klien (seperti aplikasi web atau mobile) untuk mengakses beberapa layanan backend, sekaligus mengelola interaksi antara klien dan server. *(Sumber definisi: IBM)*

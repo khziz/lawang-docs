@@ -1,3 +1,7 @@
+---
+description: Mengatur siapa yang boleh memanggil API: group, client, credential, grant service.
+---
+
 # Consumer
 
 **Consumer** adalah pihak yang memanggil API Anda. Bagian ini mengatur *siapa* boleh memanggil *apa*.

@@ -1,3 +1,7 @@
+---
+description: Komponen AMP, kebutuhan hardware, dan software yang dibutuhkan.
+---
+
 # Arsitektur dan kebutuhan sistem
 
 ## Komponen AMP

@@ -1,6 +1,10 @@
-# Membuat server, jadwal, dan job
+---
+description: Langkah membuat server, schedule, dan job di Console.
+---
 
-Sebuah job butuh dua hal lebih dulu: **server** (tempat job jalan) dan **schedule** (jadwalnya).
+# Membuat server, schedule, dan job
+
+Sebuah job butuh dua hal lebih dulu: **server** (tempat job berjalan) dan **schedule** (jadwalnya).
 
 ```text
  Create Server ─┐
@@ -34,4 +38,4 @@ Sebuah job butuh dua hal lebih dulu: **server** (tempat job jalan) dan **schedul
 
 Job berjalan pada jadwalnya. Anda juga bisa memicunya **manual**, atau memanggilnya dari job lain dengan `$GT.run`.
 
-Contoh skrip untuk langkah 5 ada di [Menulis script job](script-job.md).
+Contoh script untuk langkah 5 ada di [Script job](script-job.md). Kasus lengkap ada di [Study Case DSP](study-case/README.md).

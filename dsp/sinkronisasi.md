@@ -1,4 +1,8 @@
-# Fitur sinkronisasi data
+---
+description: Direct, Upsync, Downsync, serta metode insert dan upsert.
+---
+
+# Sinkronisasi data
 
 DSP menyediakan tiga cara sinkronisasi, semuanya lewat fungsi `$GT.sync`.
 
@@ -111,6 +115,10 @@ Contoh Downsync pada slide materi menaruh `agent` di sumber, sama seperti Upsync
 
 ## Sinkronisasi dari SAP
 
-Untuk menyalin tabel keluaran SAP ke database, gunakan `$GT.rfc_sync`. Lihat [Mengatur job di scheduler](../amp/javascript/panduan/job-scheduler.md#menyinkronkan-tabel-sap-rfc_sync).
+Untuk menyalin tabel keluaran SAP ke database, gunakan `$GT.rfc_sync`. Lihat [Mengatur job di scheduler](../amp/connection/javascript/methods/panduan/job-scheduler.md#menyinkronkan-tabel-sap-rfc_sync).
 
-**Referensi lengkap:** [Scheduler & sinkronisasi](../amp/javascript/referensi/scheduler.md)
+**Referensi lengkap:** [Scheduler & sinkronisasi](../amp/connection/javascript/methods/referensi/scheduler.md)
+
+## Study case
+
+Contoh lengkap setiap arah sinkronisasi ada di [Study Case DSP](study-case/README.md).

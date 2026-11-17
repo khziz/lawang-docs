@@ -1,3 +1,7 @@
+---
+description: Request validation, request transformer, response transformer, dan log transformer.
+---
+
 # Filter
 
 Filter dipasang pada **endpoint** untuk memeriksa atau mengubah data yang lewat. Ada empat jenis.
@@ -57,11 +61,11 @@ Cara membacanya:
 * Kunci `queries` menandakan bagian request yang diperiksa.
 * `schema` berisi aturan JSON Schema. Nilai query berbentuk **array**, jadi tipenya `array` dengan `items` bertipe string.
 * `required` menyebut field yang wajib ada.
-* `message` dan `code` adalah jawaban yang dikirim bila request tidak lolos (di sini `400 Invalid Parameters`).
+* `message` dan `code` adalah response yang dikirim bila request tidak lolos (di sini `400 Invalid Parameters`).
 
 ## Request transformer
 
-Mengubah **body request** sebelum diteruskan. Skripnya mengikuti format **GJSON**: sebuah array berisi object, tempat tiap pasangan berbentuk `"NamaBaru": "path.lama"`.
+Mengubah **body request** sebelum diteruskan. Scriptnya mengikuti format **GJSON**: sebuah array berisi object, tempat tiap pasangan berbentuk `"NamaBaru": "path.lama"`.
 
 ```json
 [
@@ -84,13 +88,13 @@ Artinya:
 | `"additional_field": "!Optional"` | Awalan `!` berarti **nilai tetap**: field diisi teks `Optional` |
 
 {% hint style="info" %}
-Pola `nama: path` dan awalan `!` ini mirip dengan fungsi [`$GT.transform`](javascript/panduan/ubah-dan-samarkan-data.md#memetakan-ulang-struktur-json-transform) di skrip JavaScript. Tafsir ini kami simpulkan dari contoh pada materi, jadi uji dulu dengan data Anda.
+Pola `nama: path` dan awalan `!` ini mirip dengan fungsi [`$GT.transform`](connection/javascript/methods/panduan/ubah-dan-samarkan-data.md#memetakan-ulang-struktur-json-transform) di script JavaScript. Tafsir ini kami simpulkan dari contoh pada materi, jadi uji dulu dengan data Anda.
 {% endhint %}
 
 ## Response transformer
 
-Mengubah **body response** sebelum dikirim ke konsumen. Skripnya mengikuti format **GJSON**, sama seperti request transformer. Hanya tersedia pada endpoint **HTTP** (tidak pada database dan JavaScript).
+Mengubah **body response** sebelum dikirim ke konsumen. Scriptnya mengikuti format **GJSON**, sama seperti request transformer. Hanya tersedia pada endpoint **HTTP** (tidak pada database dan JavaScript).
 
 ## Log transformer
 
-Mengubah isi **log**, baik log request maupun response (misalnya untuk menyembunyikan data sensitif). Skripnya mengikuti format **GJSON**.
+Mengubah isi **log**, baik log request maupun response (misalnya untuk menyembunyikan data sensitif). Scriptnya mengikuti format **GJSON**.
