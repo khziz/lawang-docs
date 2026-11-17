@@ -1,5 +1,5 @@
 ---
-description: Overview jenis-jenis connection di AMP dan cara memilihnya.
+description: "Overview jenis-jenis connection di AMP dan cara memilihnya."
 ---
 
 # Connection

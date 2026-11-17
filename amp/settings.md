@@ -1,5 +1,5 @@
 ---
-description: WAF, statistics server, general configs, dan blacklist IP di AMP.
+description: "WAF, statistics server, general configs, dan blacklist IP di AMP."
 ---
 
 # Pengaturan

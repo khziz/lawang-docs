@@ -1,5 +1,5 @@
 ---
-description: Mengatur siapa yang boleh memanggil API: group, client, credential, grant service.
+description: "Mengatur siapa yang boleh memanggil API: group, client, credential, grant service."
 ---
 
 # Consumer
