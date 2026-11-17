@@ -1,30 +1,38 @@
-# Lawang Core: Panduan JavaScript
+# Lawang: Dokumentasi
 
-Selamat datang. Dokumentasi ini mengajarkan cara menulis **skrip JavaScript** di Lawang Core, mulai dari nol sampai bisa membuat endpoint API dan job terjadwal.
+Selamat datang di dokumentasi **Lawang**. Lawang terdiri dari dua platform yang saling melengkapi:
+
+| Platform | Kepanjangan | Fungsi utama |
+|---|---|---|
+| **AMP** | API Gateway Management System | Mengelola API: menerima request, mengamankan, dan meneruskannya ke layanan backend |
+| **DSP** | Data Synchronization Platform | Menyinkronkan data antar database dan menjalankan job terjadwal |
+
+Keduanya memakai **skrip JavaScript** yang sama (kotak peralatan `$GT`). Skrip ini adalah salah satu fitur di **koneksi JavaScript** pada AMP, dan dipakai juga pada job di DSP.
 
 {% hint style="info" %}
-Semua nama (koneksi database, job, topic, secret, URL, tabel) dalam contoh hanya **ilustrasi**. Ganti dengan nama yang ada di konfigurasi Anda.
+Semua nama (koneksi, job, topic, secret, URL, tabel) dalam contoh hanyalah **ilustrasi**. Sesuaikan dengan konfigurasi Anda.
 {% endhint %}
 
 ## Pilih jalur Anda
 
 | Anda ingin... | Mulai dari |
 |---|---|
-| Tahu Lawang itu apa | [Apa itu Lawang Core?](mulai/apa-itu-lawang.md) |
-| Langsung mencoba | [Skrip pertama Anda](mulai/skrip-pertama.md) |
-| Mengerjakan tugas tertentu (database, API, file, dll.) | Bagian **Panduan per tugas** di sidebar |
-| Mencari detail satu fungsi | [Ringkasan semua fungsi](referensi/ringkasan-fungsi.md) |
-| Mencari tahu kenapa skrip error | [Pemecahan masalah](bantuan/pemecahan-masalah.md) |
+| Memahami gambaran besar Lawang | [Apa itu Lawang?](lawang/apa-itu-lawang.md) |
+| Menyiapkan API gateway (koneksi, endpoint, service) | [AMP: Pengantar](amp/README.md) |
+| Mengatur siapa yang boleh memanggil API | [Consumer](amp/consumer.md) |
+| Menulis skrip JavaScript untuk endpoint | [Koneksi JavaScript](amp/koneksi-javascript.md) |
+| Menyinkronkan data antar database | [DSP: Pengantar](dsp/README.md) |
+| Membuat job terjadwal | [Membuat server, jadwal, dan job](dsp/membuat-job.md) |
+| Mencari detail satu fungsi `$GT` | [Ringkasan semua fungsi](amp/javascript/referensi/ringkasan-fungsi.md) |
 
 ## Urutan belajar yang disarankan
 
-1. **Mulai di sini:** kenali konsep dan jalankan skrip pertama.
-2. **Konsep dasar:** pahami aturan yang berlaku untuk semua skrip.
-3. **Panduan per tugas:** pilih tugas yang Anda butuhkan, ikuti langkahnya.
-4. **Referensi:** buka saat butuh detail lengkap sebuah fungsi.
-5. **Bantuan:** daftar jebakan umum dan cara mengatasi error.
+1. **[Apa itu Lawang?](lawang/apa-itu-lawang.md)**: pahami peran AMP dan DSP.
+2. **AMP**: arsitektur, konsep koneksi, endpoint, service, lalu consumer.
+3. **Koneksi JavaScript**: tulis skrip sendiri dengan panduan `$GT`.
+4. **DSP**: instalasi, sinkronisasi data, dan job terjadwal.
 
-## Info teknis
+## Info teknis fungsi JavaScript
 
 | | |
 |---|---|
@@ -32,4 +40,3 @@ Semua nama (koneksi database, job, topic, secret, URL, tabel) dalam contoh hanya
 | Helper global | `atob`, `btoa`, `console.log` |
 | Engine JavaScript | [Sobek](https://github.com/grafana/sobek) `v0.0.0-20261021132036-87a47258b7dc` |
 | Snapshot sumber | `2ecee79c` |
-| Tanggal dokumen sumber | 23 Oktober 2026 |

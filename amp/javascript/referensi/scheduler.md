@@ -1,5 +1,9 @@
 # Scheduler & sinkronisasi
 
+{% hint style="info" %}
+Fungsi di halaman ini dipakai pada **script job di DSP**. Cara membuat server scheduler, jadwal, dan job ada di [Membuat job di DSP](../../../dsp/sinkronisasi.md).
+{% endhint %}
+
 {% hint style="success" %}
 Baru belajar? Baca dulu [panduan langkah demi langkah](../panduan/job-scheduler.md). Halaman ini adalah **referensi teknis** untuk dicari ulang.
 {% endhint %}

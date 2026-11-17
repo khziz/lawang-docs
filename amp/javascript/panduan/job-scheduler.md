@@ -1,5 +1,9 @@
 # Mengatur job di scheduler
 
+{% hint style="info" %}
+Fungsi di halaman ini dipakai pada **script job di DSP**. Cara membuat server scheduler, jadwal, dan job ada di [Membuat job di DSP](../../../dsp/membuat-job.md).
+{% endhint %}
+
 **Mode:** scheduler saja. **Anda akan belajar:** menjalankan job lain, menjalankan beberapa job bersamaan, dan menyinkronkan data.
 
 ## Pilih fungsi yang tepat
