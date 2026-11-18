@@ -1,5 +1,5 @@
 ---
-description: "Pengertian API gateway dan fungsi-fungsinya."
+description: Pengertian API gateway dan fungsi-fungsinya.
 ---
 
 # Apa itu API gateway?

@@ -1,5 +1,5 @@
 ---
-description: "Tiga konsep inti AMP, yaitu Connection, Endpoint, dan Service."
+description: Tiga konsep inti AMP, yaitu Connection, Endpoint, dan Service.
 ---
 
 # Konsep dasar: Connection, Endpoint, Service

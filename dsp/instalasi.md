@@ -1,5 +1,5 @@
 ---
-description: "System requirements, prasyarat, dan setup awal DSP."
+description: System requirements, prasyarat, dan setup awal DSP.
 ---
 
 # Instalasi & system requirements

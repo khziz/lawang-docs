@@ -1,5 +1,5 @@
 ---
-description: "Gambaran besar Lawang, AMP, dan DSP, serta hubungan di antara keduanya."
+description: Gambaran besar Lawang, AMP, dan DSP, serta hubungan di antara keduanya.
 ---
 
 # Apa itu Lawang?

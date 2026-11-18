@@ -1,5 +1,5 @@
 ---
-description: "Connection baru di AMP v3.0: gRPC, GraphQL, Load Balancer, Proxy, Asynchronous, Event-driven, SAP RFC."
+description: Connection baru di AMP v3.0: gRPC, GraphQL, Load Balancer, Proxy, Asynchronous, Event-driven, SAP RFC.
 ---
 
 # Connection baru di AMP v3.0

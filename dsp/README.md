@@ -1,5 +1,5 @@
 ---
-description: "Overview DSP (Data Synchronization Platform), scheduler job, dan sinkronisasi data."
+description: Overview DSP (Data Synchronization Platform), scheduler job, dan sinkronisasi data.
 ---
 
 # DSP: Data Synchronization Platform

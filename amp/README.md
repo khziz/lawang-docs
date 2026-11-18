@@ -1,5 +1,5 @@
 ---
-description: "Overview AMP (API Gateway Management Platform) v3.0 dan peta isi bagian AMP."
+description: Overview AMP (API Gateway Management Platform) v3.0 dan peta isi bagian AMP.
 ---
 
 # AMP: API Gateway Management Platform

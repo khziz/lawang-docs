@@ -1,5 +1,5 @@
 ---
-description: "Pengertian scheduler job dan tiga komponennya."
+description: Pengertian scheduler job dan tiga komponennya.
 ---
 
 # Scheduler job

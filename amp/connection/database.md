@@ -1,5 +1,5 @@
 ---
-description: "Menjadikan query SQL sebagai API lewat Connection Database."
+description: Menjadikan query SQL sebagai API lewat Connection Database.
 ---
 
 # Connection database

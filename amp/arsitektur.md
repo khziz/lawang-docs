@@ -1,5 +1,5 @@
 ---
-description: "Komponen AMP, kebutuhan hardware, dan software yang dibutuhkan."
+description: Komponen AMP, kebutuhan hardware, dan software yang dibutuhkan.
 ---
 
 # Arsitektur dan kebutuhan sistem

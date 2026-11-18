@@ -1,5 +1,5 @@
 ---
-description: "Menulis script JavaScript untuk job di DSP."
+description: Menulis script JavaScript untuk job di DSP.
 ---
 
 # Script job
