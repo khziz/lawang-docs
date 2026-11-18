@@ -1,5 +1,5 @@
 ---
-description: Dokumentasi Lawang, terdiri dari AMP (API Gateway Management Platform) dan DSP (Data Synchronization Platform).
+description: "Dokumentasi Lawang, terdiri dari AMP (API Gateway Management Platform) dan DSP (Data Synchronization Platform)."
 ---
 
 # Lawang Documentation

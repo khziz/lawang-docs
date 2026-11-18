@@ -1,5 +1,5 @@
 ---
-description: Connection JavaScript di AMP, endpoint tanpa upstream yang logikanya ditulis dengan script.
+description: "Connection JavaScript di AMP, endpoint tanpa upstream yang logikanya ditulis dengan script."
 ---
 
 # Connection JavaScript

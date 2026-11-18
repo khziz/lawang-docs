@@ -1,5 +1,5 @@
 ---
-description: Kumpulan study case DSP, dari sinkronisasi database sampai orkestrasi job.
+description: "Kumpulan study case DSP, dari sinkronisasi database sampai orkestrasi job."
 ---
 
 # Study Case DSP

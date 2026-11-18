@@ -1,5 +1,5 @@
 ---
-description: Kumpulan method $GT untuk script JavaScript di AMP dan DSP.
+description: "Kumpulan method $GT untuk script JavaScript di AMP dan DSP."
 ---
 
 # Method JavaScript ($GT)

@@ -1,5 +1,5 @@
 ---
-description: Kumpulan study case AMP, dari konfigurasi connection sampai consumer.
+description: "Kumpulan study case AMP, dari konfigurasi connection sampai consumer."
 ---
 
 # Study Case AMP

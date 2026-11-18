@@ -1,5 +1,5 @@
 ---
-description: Direct, Upsync, Downsync, serta metode insert dan upsert.
+description: "Direct, Upsync, Downsync, serta metode insert dan upsert."
 ---
 
 # Sinkronisasi data
