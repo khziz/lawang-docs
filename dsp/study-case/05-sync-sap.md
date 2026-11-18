@@ -72,6 +72,6 @@ Jika `parameters` dihilangkan, parser berhenti sebelum membaca `output`. Selalu 
 
 * `target.agent` **tidak** dipakai untuk routing oleh `rfc_sync`.
 * Default dan batas `batchSize` dan `worker` sama seperti `$GT.sync`.
-* Komunikasi ke SAP berjalan lewat adapter. Lihat [Fitur baru v3.0](../../amp/connection/fitur-baru-v3.md).
+* Komunikasi ke SAP berjalan lewat adapter. Lihat [Connection SAP RFC](../../amp/connection/sap-rfc.md).
 
 **Referensi:** [`$GT.rfc_sync`](../../amp/connection/javascript/methods/referensi/scheduler.md)

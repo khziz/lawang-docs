@@ -14,12 +14,12 @@ AMP adalah platform untuk mengelola API gateway Lawang. Versi yang dibahas di si
 | [Architecture & system requirements](arsitektur.md) | Komponen AMP, spesifikasi, software |
 | [Konsep dasar](konsep-dasar.md) | Alur Connection → Endpoint → Service |
 | **Connection** | |
-| ↳ [Overview Connection](connection/README.md) | Jenis-jenis connection |
+| ↳ [Overview Connection](connection/README.md) | Semua jenis connection |
 | ↳ [Connection HTTP](connection/http.md) | Meneruskan request ke upstream HTTP |
 | ↳ [Connection Database](connection/database.md) | Mengubah query SQL menjadi API |
 | ↳ [Connection JavaScript](connection/javascript/README.md) | Membuat endpoint dengan script |
 | ↳ [Method JavaScript](connection/javascript/methods/README.md) | Kumpulan method `$GT` untuk script |
-| ↳ [Fitur baru v3.0](connection/fitur-baru-v3.md) | gRPC, GraphQL, Load Balancer, Proxy, Asynchronous, Event-driven, SAP RFC |
+| ↳ [gRPC](connection/grpc.md) · [GraphQL](connection/graphql.md) · [Load Balancer](connection/load-balancer.md) · [Proxy](connection/proxy.md) · [Asynchronous](connection/asynchronous.md) · [Event-driven](connection/event-driven.md) · [SAP RFC](connection/sap-rfc.md) | Connection lain di AMP |
 | [Filter](filter.md) | Validation dan transformer untuk request, response, log |
 | [Consumer](consumer.md) | Group, client, credential, grant service |
 | [Settings](settings.md) | WAF, statistics server, general configs |

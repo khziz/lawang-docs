@@ -24,7 +24,7 @@ Untuk menyajikan sebuah layanan lewat AMP, Anda menyusun tiga hal secara berurut
 | HTTP | Meneruskan request ke API lain | [Connection HTTP](connection/http.md) |
 | Database (SQL) | Menjadikan query SQL sebagai API | [Connection Database](connection/database.md) |
 | JavaScript | Membuat endpoint dengan script, tanpa upstream | [Connection JavaScript](connection/javascript/README.md) |
-| gRPC, GraphQL, Load Balancer, Proxy, Asynchronous, Event-driven, SAP RFC | Fitur baru AMP v3.0 | [Fitur baru v3.0](connection/fitur-baru-v3.md) |
+| gRPC, GraphQL, Load Balancer, Proxy, Asynchronous, Event-driven, SAP RFC | Jenis connection lain | [Semua connection](connection/README.md) |
 
 ## Alur consumer
 

@@ -28,7 +28,13 @@ Lawang
 │   │    ├─ Database
 │   │    ├─ JavaScript
 │   │    │    └─ Method JavaScript ($GT)
-│   │    └─ Fitur baru v3.0
+│   │    ├─ gRPC
+│   │    ├─ GraphQL
+│   │    ├─ Load Balancer
+│   │    ├─ Proxy
+│   │    ├─ Asynchronous
+│   │    ├─ Event-driven
+│   │    └─ SAP RFC
 │   ├─ Filter
 │   ├─ Consumer
 │   ├─ Settings

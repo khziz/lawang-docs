@@ -1,21 +1,31 @@
 ---
-description: "Overview jenis-jenis connection di AMP dan cara memilihnya."
+description: "Semua jenis connection di AMP dan cara memilihnya."
 ---
 
 # Connection
 
 **Connection** menyimpan informasi tujuan layanan: alamat, protokol, dan autentikasi. Setiap connection kemudian dipakai oleh **endpoint**.
 
-## Pilih jenis connection
+## Semua jenis connection
 
-| Kebutuhan | Jenis | Halaman |
+| Connection | Fungsi | Halaman |
 |---|---|---|
-| Meneruskan request ke API HTTP/HTTPS | **HTTP** | [Connection HTTP](http.md) |
-| Menjadikan query SQL sebagai API | **Database** (PostgreSQL, Oracle, MySQL) | [Connection Database](database.md) |
-| Menulis logika sendiri dengan script | **JavaScript** | [Connection JavaScript](javascript/README.md) |
-| gRPC, GraphQL, Load Balancer, Proxy, Asynchronous, Event-driven, SAP RFC | **Fitur baru v3.0** | [Fitur baru v3.0](fitur-baru-v3.md) |
+| **HTTP** | Meneruskan request ke API HTTP/HTTPS | [Connection HTTP](http.md) |
+| **Database** | Menjadikan query SQL sebagai API (PostgreSQL, Oracle, MySQL) | [Connection Database](database.md) |
+| **JavaScript** | Menulis logika sendiri dengan script, tanpa upstream | [Connection JavaScript](javascript/README.md) |
+| **gRPC** | Komunikasi antar-service lewat remote procedure call | [Connection gRPC](grpc.md) |
+| **GraphQL** | API berbasis query language | [Connection GraphQL](graphql.md) |
+| **Load Balancer** | Membagi traffic ke beberapa server | [Connection Load Balancer](load-balancer.md) |
+| **Proxy** | Perantara antara client dan server | [Connection Proxy](proxy.md) |
+| **Asynchronous** | Mengirim HTTP request otomatis saat event terjadi | [Connection Asynchronous](asynchronous.md) |
+| **Event-driven** | Proses yang dipicu event | [Connection Event-driven](event-driven.md) |
+| **SAP RFC** | Komunikasi dengan SAP lewat SAP RFC Adapter | [Connection SAP RFC](sap-rfc.md) |
 
-## Perbandingan
+{% hint style="info" %}
+Connection HTTP, Database, dan JavaScript sudah dilengkapi langkah konfigurasinya. Untuk connection lain, materi sumber saat ini baru memuat konsepnya.
+{% endhint %}
+
+## Perbandingan HTTP, Database, dan JavaScript
 
 | | HTTP | Database | JavaScript |
 |---|---|---|---|
