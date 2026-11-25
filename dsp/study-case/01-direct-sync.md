@@ -1,4 +1,4 @@
-# Kasus 1: Sinkronisasi database ke database setiap malam
+# 1. Sinkronisasi database setiap malam
 
 ## Skenario
 
@@ -6,12 +6,12 @@ Data `items` di database operasional (`DB-SOURCE`) perlu disalin ke database lap
 
 ## Komponen
 
-| Komponen | Nilai contoh |
-|---|---|
-| Server | `scheduler-01` (ditandai sebagai scheduler) |
-| Schedule | `nightly-1am`, cron `0 1 * * *` |
-| Job | `sync-items` |
-| Metode | **Direct** dengan **upsert** |
+| Komponen | Nilai contoh                                |
+| -------- | ------------------------------------------- |
+| Server   | `scheduler-01` (ditandai sebagai scheduler) |
+| Schedule | `nightly-1am`, cron `0 1 * * *`             |
+| Job      | `sync-items`                                |
+| Metode   | **Direct** dengan **upsert**                |
 
 ## Langkah
 
@@ -40,12 +40,12 @@ $GT.sync({
 $GT.log({run: $GT.run_id, step: 'done'});
 ```
 
-| Bagian | Fungsi |
-|---|---|
-| `query` | Data apa yang diambil dari source |
-| `table` | Tabel tujuan |
-| `identityFields` | Kolom penentu baris yang sama. Karena diisi, mode-nya **upsert** |
-| `worker`, `batchSize` | Jumlah worker paralel dan ukuran batch (1 sampai 10000) |
+| Bagian                | Fungsi                                                           |
+| --------------------- | ---------------------------------------------------------------- |
+| `query`               | Data apa yang diambil dari source                                |
+| `table`               | Tabel tujuan                                                     |
+| `identityFields`      | Kolom penentu baris yang sama. Karena diisi, mode-nya **upsert** |
+| `worker`, `batchSize` | Jumlah worker paralel dan ukuran batch (1 sampai 10000)          |
 
 ## Hasil
 
@@ -83,4 +83,4 @@ $GT.sync({
 
 Placeholder `?` mengikuti driver database Anda.
 
-**Referensi:** [`$GT.sync`](../../amp/connection/javascript/methods/referensi/scheduler.md)
+**Referensi:** [`$GT.sync`](../../amp/connection/javascript/ringkasan-method/scheduler.md)

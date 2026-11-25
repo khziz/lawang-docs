@@ -1,17 +1,19 @@
 ---
-description: "Request validation, request transformer, response transformer, dan log transformer."
+description: >-
+  Request validation, request transformer, response transformer, dan log
+  transformer.
 ---
 
 # Filter
 
 Filter dipasang pada **endpoint** untuk memeriksa atau mengubah data yang lewat. Ada empat jenis.
 
-| Filter | Fungsi | Format |
-|---|---|---|
-| **Request validation** | Memastikan request (body, headers, queries) sesuai aturan | JSON Schema |
-| **Request transformer** | Mengubah body request agar sesuai kebutuhan | GJSON |
-| **Response transformer** | Mengubah body response agar sesuai kebutuhan | GJSON |
-| **Log transformer** | Mengubah isi log, baik request maupun response | GJSON |
+| Filter                   | Fungsi                                                    | Format      |
+| ------------------------ | --------------------------------------------------------- | ----------- |
+| **Request validation**   | Memastikan request (body, headers, queries) sesuai aturan | JSON Schema |
+| **Request transformer**  | Mengubah body request agar sesuai kebutuhan               | GJSON       |
+| **Response transformer** | Mengubah body response agar sesuai kebutuhan              | GJSON       |
+| **Log transformer**      | Mengubah isi log, baik request maupun response            | GJSON       |
 
 {% hint style="warning" %}
 Endpoint **database** dan **JavaScript** tidak memiliki response transformer.
@@ -80,15 +82,15 @@ Mengubah **body request** sebelum diteruskan. Scriptnya mengikuti format **GJSON
 
 Artinya:
 
-| Pasangan | Hasil |
-|---|---|
-| `"Name": "name"` | Field `Name` di hasil diisi dari field `name` pada request |
-| `"Age": "age"` | Field `Age` diisi dari `age` |
-| `"Role": "role"` | Field `Role` diisi dari `role` |
+| Pasangan                          | Hasil                                                           |
+| --------------------------------- | --------------------------------------------------------------- |
+| `"Name": "name"`                  | Field `Name` di hasil diisi dari field `name` pada request      |
+| `"Age": "age"`                    | Field `Age` diisi dari `age`                                    |
+| `"Role": "role"`                  | Field `Role` diisi dari `role`                                  |
 | `"additional_field": "!Optional"` | Awalan `!` berarti **nilai tetap**: field diisi teks `Optional` |
 
 {% hint style="info" %}
-Pola `nama: path` dan awalan `!` ini mirip dengan fungsi [`$GT.transform`](connection/javascript/methods/panduan/ubah-dan-samarkan-data.md#memetakan-ulang-struktur-json-transform) di script JavaScript. Tafsir ini kami simpulkan dari contoh pada materi, jadi uji dulu dengan data Anda.
+Pola `nama: path` dan awalan `!` ini mirip dengan fungsi [`$GT.transform`](connection/javascript/buat-endpoint-api/ubah-dan-samarkan-data.md#memetakan-ulang-struktur-json-transform) di script JavaScript. Tafsir ini kami simpulkan dari contoh pada materi, jadi uji dulu dengan data Anda.
 {% endhint %}
 
 ## Response transformer

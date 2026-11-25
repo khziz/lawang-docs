@@ -1,24 +1,24 @@
 ---
-description: "Direct, Upsync, Downsync, serta metode insert dan upsert."
+description: Direct, Upsync, Downsync, serta metode insert dan upsert.
 ---
 
 # Sinkronisasi data
 
 DSP menyediakan tiga cara sinkronisasi, semuanya lewat fungsi `$GT.sync`.
 
-| Fitur | Arah | Keterangan |
-|---|---|---|
-| **Direct** | database → database | Antar-database langsung |
-| **Upsync** | agent → database | Dari agent (misalnya kantor cabang) ke database pusat |
-| **Downsync** | database → agent | Dari database pusat ke agent |
+| Fitur        | Arah                | Keterangan                                            |
+| ------------ | ------------------- | ----------------------------------------------------- |
+| **Direct**   | database → database | Antar-database langsung                               |
+| **Upsync**   | agent → database    | Dari agent (misalnya kantor cabang) ke database pusat |
+| **Downsync** | database → agent    | Dari database pusat ke agent                          |
 
 Masing-masing bisa memakai metode **insert** atau **upsert**.
 
 ## Insert atau upsert?
 
-| Metode | Kapan | Cara |
-|---|---|---|
-| **Insert** | Menambah data ke tabel tujuan | **Tanpa** `identityFields` |
+| Metode     | Kapan                                      | Cara                                                        |
+| ---------- | ------------------------------------------ | ----------------------------------------------------------- |
+| **Insert** | Menambah data ke tabel tujuan              | **Tanpa** `identityFields`                                  |
 | **Upsert** | Perbarui bila sudah ada, tambah bila belum | **Dengan** `identityFields` (kolom penentu baris yang sama) |
 
 ## Struktur dasar `$GT.sync`
@@ -33,10 +33,10 @@ $GT.sync(
 
 Opsi:
 
-| Opsi | Bawaan | Batas |
-|---|---|---|
-| `worker` | jumlah CPU | 1 sampai 256 |
-| `batchSize` | 1000 | 1 sampai 10000 |
+| Opsi        | Bawaan     | Batas          |
+| ----------- | ---------- | -------------- |
+| `worker`    | jumlah CPU | 1 sampai 256   |
+| `batchSize` | 1000       | 1 sampai 10000 |
 
 ## Direct
 
@@ -115,10 +115,10 @@ Contoh Downsync pada slide materi menaruh `agent` di sumber, sama seperti Upsync
 
 ## Sinkronisasi dari SAP
 
-Untuk menyalin tabel keluaran SAP ke database, gunakan `$GT.rfc_sync`. Lihat [Mengatur job di scheduler](../amp/connection/javascript/methods/panduan/job-scheduler.md#menyinkronkan-tabel-sap-rfc_sync).
+Untuk menyalin tabel keluaran SAP ke database, gunakan `$GT.rfc_sync`. Lihat [Mengatur job di scheduler](../amp/connection/javascript/buat-endpoint-api/job-scheduler.md#menyinkronkan-tabel-sap-rfc_sync).
 
-**Referensi lengkap:** [Scheduler & sinkronisasi](../amp/connection/javascript/methods/referensi/scheduler.md)
+**Referensi lengkap:** [Scheduler & sinkronisasi](../amp/connection/javascript/ringkasan-method/scheduler.md)
 
 ## Study case
 
-Contoh lengkap setiap arah sinkronisasi ada di [Study Case DSP](study-case/README.md).
+Contoh lengkap setiap arah sinkronisasi ada di [Study Case DSP](study-case/).

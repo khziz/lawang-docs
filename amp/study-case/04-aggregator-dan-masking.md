@@ -1,4 +1,4 @@
-# Kasus 4: Menggabungkan API dan menyamarkan data
+# 4. Menggabungkan API dan menyamarkan data
 
 ## Skenario
 
@@ -6,11 +6,11 @@ Aplikasi mobile butuh data customer dari API internal, tetapi nomor telepon tida
 
 ## Komponen
 
-| Komponen | Nilai contoh |
-|---|---|
-| Connection JavaScript | `js-main` |
-| Endpoint | `/customer` (GET) |
-| Service | `/api/customer` |
+| Komponen              | Nilai contoh      |
+| --------------------- | ----------------- |
+| Connection JavaScript | `js-main`         |
+| Endpoint              | `/customer` (GET) |
+| Service               | `/api/customer`   |
 
 ## Script
 
@@ -71,4 +71,4 @@ Request `?id=42` menghasilkan response seperti:
 
 * Masking bekerja per **byte**. Gunakan teks ASCII agar karakter tidak terpotong.
 * Jika `n` masking sama dengan atau lebih besar dari panjang teks, nilai asli dikembalikan tanpa disamarkan. Karena itu script menjaga `phone.length > 4`.
-* Method terkait: [`$GT.get`](../connection/javascript/methods/referensi/http.md), [`$GT.mask_prefix`](../connection/javascript/methods/referensi/masking-transformasi.md).
+* Method terkait: [`$GT.get`](../connection/javascript/ringkasan-method/http.md), [`$GT.mask_prefix`](../connection/javascript/ringkasan-method/masking-transformasi.md).

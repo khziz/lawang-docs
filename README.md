@@ -1,15 +1,17 @@
 ---
-description: "Dokumentasi Lawang, terdiri dari AMP (API Gateway Management Platform) dan DSP (Data Synchronization Platform)."
+description: >-
+  Dokumentasi Lawang, terdiri dari AMP (API Gateway Management Platform) dan DSP
+  (Data Synchronization Platform).
 ---
 
 # Lawang Documentation
 
 **Lawang** terdiri dari dua platform yang saling melengkapi:
 
-| Platform | Kepanjangan | Fungsi utama |
-|---|---|---|
-| **AMP** | API Gateway Management Platform | Mengelola API: menerima request, mengamankan, lalu meneruskannya ke layanan backend |
-| **DSP** | Data Synchronization Platform | Menyinkronkan data antar database dan menjalankan job terjadwal |
+| Platform | Kepanjangan                     | Fungsi utama                                                                        |
+| -------- | ------------------------------- | ----------------------------------------------------------------------------------- |
+| **AMP**  | API Gateway Management Platform | Mengelola API: menerima request, mengamankan, lalu meneruskannya ke layanan backend |
+| **DSP**  | Data Synchronization Platform   | Menyinkronkan data antar database dan menjalankan job terjadwal                     |
 
 Keduanya memakai **script JavaScript** yang sama. Di AMP, script ini adalah bagian dari **Connection JavaScript**, dengan kumpulan **method** `$GT` yang siap dipakai. Di DSP, script yang sama dipakai di dalam **job**.
 
@@ -19,7 +21,7 @@ Semua nama (connection, job, topic, secret, URL, tabel) dalam contoh hanyalah **
 
 ## Struktur dokumentasi
 
-```text
+```
 Lawang
 ├─ AMP
 │   ├─ Overview & Architecture
@@ -49,21 +51,21 @@ Lawang
 
 ## Pilih jalur Anda
 
-| Anda ingin... | Mulai dari |
-|---|---|
-| Memahami gambaran besar | [Apa itu Lawang?](lawang/apa-itu-lawang.md) |
-| Membuat API gateway | [AMP: Overview](amp/README.md) |
-| Menghubungkan ke upstream atau database | [Connection](amp/connection/README.md) |
-| Menulis script untuk endpoint | [Connection JavaScript](amp/connection/javascript/README.md) |
-| Mencari satu method `$GT` | [Ringkasan semua method](amp/connection/javascript/methods/referensi/ringkasan-method.md) |
-| Menyinkronkan data | [DSP: Overview](dsp/README.md) |
-| Melihat contoh kasus nyata | [Study Case AMP](amp/study-case/README.md) · [Study Case DSP](dsp/study-case/README.md) |
+| Anda ingin...                           | Mulai dari                                                            |
+| --------------------------------------- | --------------------------------------------------------------------- |
+| Memahami gambaran besar                 | [Apa itu Lawang?](apa-itu-lawang.md)                                  |
+| Membuat API gateway                     | [AMP: Overview](amp/amp.md)                                           |
+| Menghubungkan ke upstream atau database | [Connection](amp/connection/)                                         |
+| Menulis script untuk endpoint           | [Connection JavaScript](amp/connection/javascript/)                   |
+| Mencari satu method `$GT`               | [Ringkasan semua method](amp/connection/javascript/ringkasan-method/) |
+| Menyinkronkan data                      | [DSP: Overview](dsp/dsp.md)                                           |
+| Melihat contoh kasus nyata              | [Study Case AMP](amp/study-case/) · [Study Case DSP](dsp/study-case/) |
 
 ## Info teknis method JavaScript
 
-| | |
-|---|---|
-| Jumlah method `$GT` | 42 |
-| Helper global | `atob`, `btoa`, `console.log` |
-| Engine JavaScript | [Sobek](https://github.com/grafana/sobek) `v0.0.0-20261021132036-87a47258b7dc` |
-| Snapshot sumber | `2ecee79c` |
+|                     |                                                                                |
+| ------------------- | ------------------------------------------------------------------------------ |
+| Jumlah method `$GT` | 42                                                                             |
+| Helper global       | `atob`, `btoa`, `console.log`                                                  |
+| Engine JavaScript   | [Sobek](https://github.com/grafana/sobek) `v0.0.0-20261021132036-87a47258b7dc` |
+| Snapshot sumber     | `2ecee79c`                                                                     |

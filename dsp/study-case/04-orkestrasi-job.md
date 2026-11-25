@@ -1,4 +1,4 @@
-# Kasus 4: Orkestrasi beberapa job
+# 4. Orkestrasi beberapa job
 
 ## Skenario
 
@@ -6,14 +6,14 @@ Setiap malam, dua impor (`import-a` dan `import-b`) harus selesai dulu. Setelah 
 
 ## Komponen
 
-| Job | Tugas |
-|---|---|
-| `import-a` | Sinkronisasi data sumber A |
-| `import-b` | Sinkronisasi data sumber B |
-| `build-summary` | Membuat ringkasan setelah impor selesai |
+| Job                | Tugas                                        |
+| ------------------ | -------------------------------------------- |
+| `import-a`         | Sinkronisasi data sumber A                   |
+| `import-b`         | Sinkronisasi data sumber B                   |
+| `build-summary`    | Membuat ringkasan setelah impor selesai      |
 | `nightly-pipeline` | **Job induk** yang mengatur urutan ketiganya |
 
-```text
+```
  nightly-pipeline
    ├─ parallel ─┬─ import-a
    │            └─ import-b
@@ -43,11 +43,11 @@ $GT.log({run: $GT.run_id, step: 'done'});
 
 ## Cara kerja
 
-| Baris | Perilaku |
-|---|---|
-| `$GT.parallel([...])` | Menjalankan semua job anak bersamaan, lalu menunggu semuanya. Gagal pada salah satu membatalkan kelompok dan melempar error |
-| `$GT.run('...', false)` | Menjalankan satu job dan **mengembalikan** teks error alih-alih melempar |
-| `throw error` | Meneruskan error agar job induk ditandai gagal |
+| Baris                   | Perilaku                                                                                                                    |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| `$GT.parallel([...])`   | Menjalankan semua job anak bersamaan, lalu menunggu semuanya. Gagal pada salah satu membatalkan kelompok dan melempar error |
+| `$GT.run('...', false)` | Menjalankan satu job dan **mengembalikan** teks error alih-alih melempar                                                    |
+| `throw error`           | Meneruskan error agar job induk ditandai gagal                                                                              |
 
 ## Hasil
 
@@ -60,4 +60,4 @@ $GT.log({run: $GT.run_id, step: 'done'});
 * Kedalaman nested maksimum **8**.
 * `exception=false` hanya menekan error eksekusi. Job yang tidak ditemukan tetap melempar error.
 
-**Referensi:** [Mengatur job di scheduler](../../amp/connection/javascript/methods/panduan/job-scheduler.md)
+**Referensi:** [Mengatur job di scheduler](../../amp/connection/javascript/buat-endpoint-api/job-scheduler.md)

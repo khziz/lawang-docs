@@ -1,5 +1,5 @@
 ---
-description: "Connection Event-driven di AMP v3.0 untuk proses yang dipicu event."
+description: Connection Event-driven di AMP v3.0 untuk proses yang dipicu event.
 ---
 
 # Connection Event-driven
@@ -10,7 +10,7 @@ description: "Connection Event-driven di AMP v3.0 untuk proses yang dipicu event
 
 Dipakai bila proses perlu berjalan saat sebuah event terjadi, tanpa service lain memanggilnya secara langsung.
 
-Dari script JavaScript, pesan ke backend event-driven dikirim dengan `$GT.publish`. Lihat [Mengirim pesan dan memanggil SAP](javascript/methods/panduan/kirim-pesan-dan-sap.md).
+Dari script JavaScript, pesan ke backend event-driven dikirim dengan `$GT.publish`. Lihat [Mengirim pesan dan memanggil SAP](javascript/buat-endpoint-api/kirim-pesan-dan-sap.md).
 
 ## Konfigurasi
 

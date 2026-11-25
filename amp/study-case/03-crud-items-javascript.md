@@ -1,4 +1,4 @@
-# Kasus 3: CRUD items dengan JavaScript
+# 3. CRUD items dengan JavaScript
 
 ## Skenario
 
@@ -6,12 +6,12 @@ Anda butuh API `items` dengan logika sendiri: membaca satu item, dan membuat ite
 
 ## Komponen
 
-| Komponen | Nilai contoh |
-|---|---|
-| Connection JavaScript | `js-main` |
-| Endpoint 1 | `/items` GET (baca) |
-| Endpoint 2 | `/items` POST (buat) |
-| Service | `/api/items` (untuk masing-masing method) |
+| Komponen              | Nilai contoh                              |
+| --------------------- | ----------------------------------------- |
+| Connection JavaScript | `js-main`                                 |
+| Endpoint 1            | `/items` GET (baca)                       |
+| Endpoint 2            | `/items` POST (buat)                      |
+| Service               | `/api/items` (untuk masing-masing method) |
 
 Database `db_main` dan tabel `items` (kolom `id`, `name`) sudah terdaftar di konfigurasi Anda.
 
@@ -72,15 +72,15 @@ export default function () {
 
 ## Hasil
 
-| Request | Response |
-|---|---|
-| `GET ...?id=7` | `200` dan data item, atau `404` bila tidak ada |
-| `GET` tanpa `id` | `400` |
-| `POST` dengan `{"name": "A"}` | `201` dan `{"id": "<uuid>"}` |
-| `POST` tanpa `name` | `400` |
+| Request                       | Response                                       |
+| ----------------------------- | ---------------------------------------------- |
+| `GET ...?id=7`                | `200` dan data item, atau `404` bila tidak ada |
+| `GET` tanpa `id`              | `400`                                          |
+| `POST` dengan `{"name": "A"}` | `201` dan `{"id": "<uuid>"}`                   |
+| `POST` tanpa `name`           | `400`                                          |
 
 ## Catatan
 
 * Kolom `id` bertipe teks (UUID) pada contoh ini. Sesuaikan dengan skema tabel Anda.
-* Method yang dipakai: [`$GT.query`](../connection/javascript/methods/referensi/database.md), [`$GT.save`](../connection/javascript/methods/referensi/database.md), [`$GT.response`](../connection/javascript/methods/referensi/http.md), [`$GT.uuid`](../connection/javascript/methods/referensi/utilitas-logging.md).
+* Method yang dipakai: [`$GT.query`](../connection/javascript/ringkasan-method/database.md), [`$GT.save`](../connection/javascript/ringkasan-method/database.md), [`$GT.response`](../connection/javascript/ringkasan-method/http.md), [`$GT.uuid`](../connection/javascript/ringkasan-method/utilitas-logging.md).
 * Error teknis hanya dicatat dengan `$GT.log`. Consumer menerima pesan umum.
