@@ -4,19 +4,18 @@ Panah menunjukkan arah koneksi dibuka (dari → ke).
 
 ## Diagram
 
-```
-                     2727 (HTTP)                                port backend
- [Pengguna API] ──────────────────▶ [ Lawang Core ] ──────────────────────▶ [Backend / API instansi]
-                                    :2727 HTTP     │
-                                    :9999 gRPC     │ 9200 (activity log)
-                                      │      ▲     └──────────────────────▶ [Elasticsearch :9200]
-                           5757 gRPC  │      │ 9999 gRPC                        ▲        ▲
-                                      ▼      │                                  │ 9200   │ 9200
-                     3737 (HTTP)                                                │        │
- [Admin browser] ─────────────────▶ [ Lawang Console ] ─────────────────────────┘        │
-                                    :3737 HTTP     │ 5601 ────────────────────▶ [Kibana :5601]
-                                    :5757 gRPC     │
-                                                   └ 5432 ────────────────────▶ [PostgreSQL :5432]
+```mermaid
+flowchart LR
+    U["Pengguna API"] -->|"2727 HTTP"| C["Lawang Core<br/>:2727 HTTP<br/>:9999 gRPC"]
+    A["Admin browser"] -->|"3737 HTTP"| K["Lawang Console<br/>:3737 HTTP<br/>:5757 gRPC"]
+    C -->|"5757 gRPC"| K
+    K -->|"9999 gRPC"| C
+    C -->|"port backend"| B["Backend / API instansi"]
+    C -->|"9200 HTTPS (activity log)"| E[("Elasticsearch :9200")]
+    K -->|"9200 HTTPS"| E
+    K -->|"5601 HTTP"| KB["Kibana :5601"]
+    K -->|"5432 TCP"| P[("PostgreSQL :5432")]
+    KB -->|"9200 HTTPS"| E
 ```
 
 ## Detail koneksi
