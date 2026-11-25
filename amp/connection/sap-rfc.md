@@ -1,22 +1,24 @@
 ---
-description: "Connection SAP RFC di AMP v3.0 dan model komunikasi AMP dengan SAP lewat SAP RFC Adapter."
+description: >-
+  Connection SAP RFC di AMP v3.0 dan model komunikasi AMP dengan SAP lewat SAP
+  RFC Adapter.
 ---
 
 # Connection SAP RFC
 
-**SAP RFC** menghubungkan AMP dengan SAP. AMP **tidak berkomunikasi langsung** dengan SAP, melainkan lewat **SAP RFC Adapter** yang berperan sebagai *protocol bridge*.
+**SAP RFC** menghubungkan AMP dengan SAP. AMP **tidak berkomunikasi langsung** dengan SAP, melainkan lewat **SAP RFC Adapter** yang berperan sebagai _protocol bridge_.
 
 ## Model komunikasi
 
-```text
+```
   AMP  ──HTTP──►  SAP RFC Adapter  ──RFC──►  SAP
   AMP  ◄─HTTP───  SAP RFC Adapter  ◄─RFC───  SAP
 ```
 
-| Pihak | Protokol |
-|---|---|
-| AMP ↔ Adapter | HTTP |
-| Adapter ↔ SAP | RFC |
+| Pihak         | Protokol |
+| ------------- | -------- |
+| AMP ↔ Adapter | HTTP     |
+| Adapter ↔ SAP | RFC      |
 
 Adapter diperlukan karena AMP tidak berkomunikasi langsung dengan SAP.
 
@@ -31,7 +33,7 @@ Adapter diperlukan karena AMP tidak berkomunikasi langsung dengan SAP.
 
 Dari script JavaScript, gunakan method `$GT.rfc` (satu kali panggil) atau `$GT.rfc_sync` (sinkronisasi tabel SAP ke database di DSP):
 
-* [Mengirim pesan dan memanggil SAP](javascript/methods/panduan/kirim-pesan-dan-sap.md)
+* [Mengirim pesan dan memanggil SAP](javascript/buat-endpoint-api/kirim-pesan-dan-sap.md)
 * [`$GT.rfc_sync` di DSP](../../dsp/study-case/05-sync-sap.md)
 
 ## Konfigurasi

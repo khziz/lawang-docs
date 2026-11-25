@@ -1,4 +1,4 @@
-# Kasus 5: Sinkronisasi tabel SAP ke database
+# 5. Sinkronisasi tabel SAP
 
 ## Skenario
 
@@ -6,12 +6,12 @@ Data `ITEMS` ada di SAP dan bisa dibaca lewat fungsi RFC `Z_READ_ITEMS`. Anda in
 
 ## Komponen
 
-| Komponen | Nilai contoh |
-|---|---|
-| Connection SAP | `sap` |
-| Fungsi RFC | `Z_READ_ITEMS` |
-| Tabel keluaran SAP | `ITEMS` |
-| Target | Database `db_b`, tabel `items` |
+| Komponen           | Nilai contoh                   |
+| ------------------ | ------------------------------ |
+| Connection SAP     | `sap`                          |
+| Fungsi RFC         | `Z_READ_ITEMS`                 |
+| Tabel keluaran SAP | `ITEMS`                        |
+| Target             | Database `db_b`, tabel `items` |
 
 ## Script
 
@@ -28,13 +28,13 @@ $GT.rfc_sync({
 });
 ```
 
-| Bagian | Fungsi |
-|---|---|
-| `function` | Nama fungsi RFC |
-| `parameters` | Parameter RFC. **Selalu isi**, pakai `{}` bila kosong |
-| `output.key` | Tabel keluaran yang diambil. **Wajib diisi** |
-| `output.fields` | Kolom yang dipilih. `[]` berarti kolom diambil dari hasil |
-| `identityFields` | Kolom penentu baris yang sama untuk upsert |
+| Bagian           | Fungsi                                                    |
+| ---------------- | --------------------------------------------------------- |
+| `function`       | Nama fungsi RFC                                           |
+| `parameters`     | Parameter RFC. **Selalu isi**, pakai `{}` bila kosong     |
+| `output.key`     | Tabel keluaran yang diambil. **Wajib diisi**              |
+| `output.fields`  | Kolom yang dipilih. `[]` berarti kolom diambil dari hasil |
+| `identityFields` | Kolom penentu baris yang sama untuk upsert                |
 
 ## Hasil
 
@@ -74,4 +74,4 @@ Jika `parameters` dihilangkan, parser berhenti sebelum membaca `output`. Selalu 
 * Default dan batas `batchSize` dan `worker` sama seperti `$GT.sync`.
 * Komunikasi ke SAP berjalan lewat adapter. Lihat [Connection SAP RFC](../../amp/connection/sap-rfc.md).
 
-**Referensi:** [`$GT.rfc_sync`](../../amp/connection/javascript/methods/referensi/scheduler.md)
+**Referensi:** [`$GT.rfc_sync`](../../amp/connection/javascript/ringkasan-method/scheduler.md)

@@ -1,10 +1,10 @@
 ---
-description: "Kumpulan method $GT untuk script JavaScript di AMP dan DSP."
+description: Kumpulan method $GT untuk script JavaScript di AMP dan DSP.
 ---
 
-# Method JavaScript ($GT)
+# Method JavaScript
 
-Bagian ini membahas kumpulan **method** `$GT` yang siap dipakai di script JavaScript. Method dipakai pada **[Connection JavaScript](../README.md) di AMP** (membuat endpoint) dan pada **job di [DSP](../../../../dsp/README.md)** (tugas terjadwal dan sinkronisasi).
+Bagian ini membahas kumpulan **method** `$GT` yang siap dipakai di script JavaScript. Method dipakai pada [**Connection JavaScript**](../) **di AMP** (membuat endpoint) dan pada **job di** [**DSP**](../../../../dsp/dsp.md) (tugas terjadwal dan sinkronisasi).
 
 {% hint style="info" %}
 **Method** di sini berarti method `$GT.nama(...)`, misalnya `$GT.query`. Jangan tertukar dengan **HTTP method** (GET, POST, dan seterusnya).
@@ -16,13 +16,13 @@ Semua nama (connection database, job, topic, secret, URL, tabel) dalam contoh ha
 
 ## Pilih jalur Anda
 
-| Anda ingin... | Mulai dari |
-|---|---|
-| Tahu Lawang itu apa | [Mengenal script JavaScript](mulai/mengenal-script.md) |
-| Langsung mencoba | [Script pertama Anda](mulai/script-pertama.md) |
-| Mengerjakan tugas tertentu (database, API, file, dll.) | Bagian **Panduan per tugas** di sidebar |
-| Mencari detail satu method | [Ringkasan semua method](referensi/ringkasan-method.md) |
-| Mencari tahu kenapa script error | [Troubleshooting](bantuan/pemecahan-masalah.md) |
+| Anda ingin...                                          | Mulai dari                                              |
+| ------------------------------------------------------ | ------------------------------------------------------- |
+| Tahu Lawang itu apa                                    | [Mengenal script JavaScript](mengenal-script.md)        |
+| Langsung mencoba                                       | [Script pertama Anda](script-pertama.md)                |
+| Mengerjakan tugas tertentu (database, API, file, dll.) | Bagian **Panduan per tugas** di sidebar                 |
+| Mencari detail satu method                             | [Ringkasan semua method](../ringkasan-method/)          |
+| Mencari tahu kenapa script error                       | [Troubleshooting](../jebakan-umum/pemecahan-masalah.md) |
 
 ## Urutan belajar yang disarankan
 
@@ -34,10 +34,10 @@ Semua nama (connection database, job, topic, secret, URL, tabel) dalam contoh ha
 
 ## Info teknis
 
-| | |
-|---|---|
-| Jumlah method `$GT` | 42 |
-| Helper global | `atob`, `btoa`, `console.log` |
-| Engine JavaScript | [Sobek](https://github.com/grafana/sobek) `v0.0.0-20261021132036-87a47258b7dc` |
-| Snapshot sumber | `2ecee79c` |
-| Tanggal dokumen sumber | 23 Oktober 2026 |
+|                        |                                                                                |
+| ---------------------- | ------------------------------------------------------------------------------ |
+| Jumlah method `$GT`    | 42                                                                             |
+| Helper global          | `atob`, `btoa`, `console.log`                                                  |
+| Engine JavaScript      | [Sobek](https://github.com/grafana/sobek) `v0.0.0-20261021132036-87a47258b7dc` |
+| Snapshot sumber        | `2ecee79c`                                                                     |
+| Tanggal dokumen sumber | 23 Oktober 2026                                                                |
