@@ -62,6 +62,7 @@
   * [3. CRUD items dengan JavaScript](amp/study-case/03-crud-items-javascript.md)
   * [4. Menggabungkan API dan menyamarkan data](amp/study-case/04-aggregator-dan-masking.md)
   * [5. Akses per departemen](amp/study-case/05-akses-per-departemen.md)
+* [Port & arah connection](amp/lawang-ports.md)
 
 ## DSP
 
